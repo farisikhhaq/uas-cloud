@@ -1,0 +1,37 @@
+version: "3"
+services:
+  #Laravel App
+  masyarakat:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dhimasarbi/masyarakat
+    container_name: masyarakat
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: masyarakat
+      SERVICE_TAGS: masyarakat
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - laravel-masyarakat
+  #Nginx Service
+  nginx-masyarakat:
+    image: nginx:alpine
+    container_name: nginx-masyarakat
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "8090:8090"
+    volumes:
+      - ./:/var/www/html
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+    networks:
+      - laravel-masyarakat
+
+#Docker Networks
+networks:
+  laravel-masyarakat:
+    driver: bridge
