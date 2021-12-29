@@ -18,9 +18,9 @@ jobs:
       - name: "Deploying Ke Server"
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.HOST }}
+          host: ${{ secrets.HOST2 }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY2 }}
           source: "masyarakat/*"
           target: "./"
 
