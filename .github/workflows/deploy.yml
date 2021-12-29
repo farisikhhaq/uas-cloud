@@ -1,4 +1,4 @@
-name: Deploy Laravel Project
+name: Cloud UAS Deploy Laravel
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - "*"
 jobs:
   build:
-    name: Build and Deploy
+    name: Build and Deploy Laravel
     runs-on: ubuntu-latest
     steps:
       - name: "Start build job"
@@ -15,7 +15,7 @@ jobs:
       - name: "Checkout"
         uses: actions/checkout@v2
 
-      - name: "Deploy Ke Server"
+      - name: "Deploying Ke Server"
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -24,7 +24,7 @@ jobs:
           source: "masyarakat/*"
           target: "./"
 
-      - name: "Configuration Project And Running Project"
+      - name: "Konfigurasi Project And Menjalankan Project"
         uses: appleboy/ssh-action@master
         with:
           host: ${{secrets.HOST}}
