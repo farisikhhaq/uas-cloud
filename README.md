@@ -1,4 +1,4 @@
-# Cloud Computing - Final Exam Cloud Computing Deploy Laravel Project SIMAW
+# Cloud Computing  - Final Exam Cloud Computing Deploy Laravel Project SIMAW 
 
 ## ScreenShot Hasil
 ![](screenshot/1.gif)
