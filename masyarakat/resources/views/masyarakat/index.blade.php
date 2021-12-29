@@ -21,7 +21,7 @@
         <!-- Header-->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">Sistem Pengaduan Masyarakat</h1>
+                <h1 class="mb-1">System Pengaduan Masyarakat</h1>
                 <h3 class="mb-5"><em>Terjadi Fenomena di Sekitar Anda? Adukan Pada Kami!</em></h3>
                 <a class="btn btn-primary btn-xl" href="/loginmasyarakat">Login</a><!-- ROUTE KE LOGIN-->
             </div>
