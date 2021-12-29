@@ -1,7 +1,7 @@
 # Cloud Computing - Final Exam Cloud Computing Deploy Laravel Project SIMAW
 
 ## ScreenShot Hasil
-![](screenshot/1.png)
+![](screenshot/1.gif)
 
 ### IDENTITAS DIRI
 ```
